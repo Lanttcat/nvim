@@ -5,7 +5,7 @@ capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 
 local servers = {
     "gopls", "bashls", "jedi_language_server", "dockerls", "terraformls",
-    "sumneko_lua", "tsserver", "texlab", "yamlls", "jsonls"
+    "sumneko_lua", "tsserver", "texlab", "yamlls", "jsonls", "rust_analyzer"
 }
 -- Use a loop to conveniently call 'setup' on multiple servers
 for _, lsp in ipairs(servers) do
@@ -112,7 +112,7 @@ for _, lsp in ipairs(servers) do
                 validate = false, -- TODO: conflicts between Kubernetes resources and kustomization.yaml
                 completion = true,
                 hover = true
-            }
+            },
         },
         flags = {debounce_text_changes = 150}
     }

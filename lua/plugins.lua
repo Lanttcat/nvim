@@ -212,7 +212,7 @@ use {"ggandor/lightspeed.nvim", event = "BufReadPre"}
 
 use {"cuducos/yaml.nvim", ft = {"yaml"}}
 
-use {"ray-x/go.nvim", config = get_config("go")}
+-- use {"ray-x/go.nvim", config = get_config("go")}
 
 use {"LudoPinelli/comment-box.nvim", config = get_config("comment-box")}
 
