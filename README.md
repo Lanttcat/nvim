@@ -1,3 +1,5 @@
+Fork from [Allanman' nvim config](https://github.com/Allaman/nvim/)
+
 # My Neovim Configuration
 
 ![](./screen.png)
