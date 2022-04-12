@@ -1,5 +1,6 @@
 local g = vim.g
 
+-- g.nvim_tree_indent_markers = 1 -- 0 by default, this option shows indent markers when folders are open
 g.nvim_tree_git_hl = 1 -- 0 by default, will enable file highlight for git attributes (can be used without the icons).
 g.nvim_tree_highlight_opened_files = 1 -- 0 by default, will enable folder and file icon highlight for opened files/directories.
 g.nvim_tree_root_folder_modifier = ":~" -- This is the default. See :help filename-modifiers for more options
@@ -85,7 +86,7 @@ require("nvim-tree").setup {
         change_dir = {enable = true, global = false},
         open_file = {
             quit_on_open = false,
-            resize_window = false,
+            resize_window = true,
             window_picker = {
                 enable = true,
                 chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
@@ -105,11 +106,11 @@ require("nvim-tree").setup {
         number = false,
         relativenumber = false,
         -- width of the window, can be either a number (columns) or a string in `%`
-        width = "30%",
+        width = 30,
         -- side of the tree, can be one of 'left' | 'right' | 'top' | 'bottom'
         side = "left",
         -- if true the tree will resize itself after opening a file
-        auto_resize = false,
+        auto_resize = true,
         mappings = {
             -- custom only false will merge the list with the default mappings
             -- if true, it will only use your list to set the mappings
