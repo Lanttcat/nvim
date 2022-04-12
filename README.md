@@ -162,6 +162,10 @@ For the builtin LSP (see [lspconfig](https://github.com/neovim/nvim-lspconfig/bl
 - [lua-language-server](https://github.com/sumneko/lua-language-server)
 - For advanced spell checks via [vim-grammarous](https://github.com/rhysd/vim-grammarous) Java 8+ is required
 
+### UI
+
+- [A patched font on Nerd](https://www.nerdfonts.com/)
+
 ## Inspiration
 
 - [LunarVim](https://github.com/LunarVim/LunarVim)
