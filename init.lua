@@ -6,3 +6,5 @@ require("mappings")
 require("options")
 -- Vim autocommands/autogroups
 require("autocmd")
+-- Setting for GUI
+require("gui")
