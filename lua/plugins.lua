@@ -42,7 +42,16 @@ use {"nvim-telescope/telescope-symbols.nvim"}
 use {"nvim-telescope/telescope-file-browser.nvim"}
 use {"nvim-telescope/telescope-fzf-native.nvim", run = "make"}
 
-use {"kyazdani42/nvim-tree.lua", config = get_config("nvim-tree")}
+use {
+    "kyazdani42/nvim-web-devicons",
+    config = get_config("nvim-web-devicons")
+}
+
+use {
+    "kyazdani42/nvim-tree.lua",
+    requires = {"kyazdani42/nvim-web-devicons"},
+    config = get_config("nvim-tree")
+}
 
 use {"numToStr/Navigator.nvim", config = get_config("navigator")}
 
